@@ -1,0 +1,577 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+html {
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  height: -webkit-fill-available;
+}
+
+/*--pc > 641px--　　簡易ブレイクポイントクラス*/
+@media screen and (min-width: 769px) {
+  .pc {
+    display: block;
+  }
+  .pcImg {
+    display: inline-block;
+  }
+  .sp {
+    display: none;
+  }
+  .spImg {
+    display: none;
+  }
+}
+/*--sp < 640px　簡易ブレイクポイントクラス--*/
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+  .spImg {
+    display: inline-block;
+  }
+  .pc {
+    display: none;
+  }
+  .pcImg {
+    display: none;
+  }
+}
+.ov {
+  transition: opacity 0.3s ease-out, background-color 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.ov:hover {
+  opacity: 0.75;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+  /* スクロールバーがなくなってがたつくのを防ぐ */
+  scrollbar-gutter: stable;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+main {
+  font-feature-settings: "palt";
+}
+
+header {
+  width: 360px;
+  height: 60px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: solid 1px #000;
+  border-radius: 10px;
+  box-shadow: #000 1px 1px;
+  z-index: 999;
+  background-color: #f7f2ea;
+  -webkit-clip-path: inset(-1% -1px -1px 0);
+          clip-path: inset(-1% -1px -1px 0);
+  transition: 0.2s;
+  /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+}
+header .active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+header .displayNone {
+  display: none;
+}
+header #SnavMusk {
+  position: fixed; /*ボタン内側の基点となるためrelativeを指定*/
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  transform: scale(1);
+  border-radius: 10px;
+  z-index: 1000;
+}
+header .navScl {
+  transform-origin: center !important;
+  transform: scale(0.4) !important;
+}
+header .small_nav {
+  position: fixed; /*ボタン内側の基点となるためrelativeを指定*/
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  /*ボタン内側*/
+}
+header .small_nav span {
+  display: inline-block;
+  transition: all 0.3s; /*アニメーションの設定*/
+  position: absolute;
+  top: 50%;
+  margin-top: 7px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  border-radius: 2px;
+  background: #000;
+  width: 45%;
+  cursor: pointer;
+}
+header .small_nav span:nth-child(1) {
+  top: 15px;
+}
+header .small_nav span:nth-child(2) {
+  top: 23px;
+}
+header .small_nav span:nth-child(3) {
+  top: 31px;
+}
+header .navactive {
+  /*activeクラスが付与されると線が回転して×に*/
+}
+header .navactive span {
+  z-index: 1001;
+}
+header .navactive span:nth-child(1) {
+  top: 16px;
+  left: 15px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 50%;
+}
+header .navactive span:nth-child(2) {
+  opacity: 0; /*真ん中の線は透過*/
+}
+header .navactive span:nth-child(3) {
+  top: 28px;
+  left: 15px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 50%;
+}
+
+.headerSmall {
+  transition: 0.2s;
+  width: 60px;
+}
+.headerSmall .nav_box {
+  transition: 0.5s;
+  display: none;
+  width: 0;
+  opacity: 0;
+}
+.headerSmall .nav_box ul {
+  transition: 0.5s;
+  display: none;
+  width: 0;
+  opacity: 0;
+}
+.headerSmall .nav_box ul li {
+  transition: 0.5s;
+  display: none;
+  width: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.headerMid {
+  transition: 0.2s;
+  opacity: 100;
+  justify-content: space-between;
+}
+
+.headerWide {
+  width: 20%;
+  position: fixed;
+  z-index: 999;
+  height: 500px;
+}
+.headerWide .nav_box {
+  width: 320px;
+  transition: 0.3s;
+  display: block;
+  opacity: 100;
+}
+.headerWide .nav_box ul {
+  display: block;
+  opacity: 100;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.headerWide .nav_box ul li {
+  display: block;
+  opacity: 100;
+  margin: 60px 0 0 0;
+}
+.headerWide .nav_box ul li:first-child {
+  margin-top: 60px;
+}
+@media screen and (max-width: 730px) {
+  .headerWide {
+    width: 79%;
+  }
+}
+
+.nav_box {
+  opacity: 100;
+  width: 360px;
+  display: block;
+}
+.nav_box ul {
+  position: relative;
+  margin: 30px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_box ul li {
+  opacity: 100;
+  position: relative;
+  font-size: 16px;
+  bottom: 10px;
+  display: block;
+}
+.nav_box ul li:hover {
+  transition: 0.1s;
+  opacity: 0.5;
+}
+
+.atv_nav_width {
+  display: flex;
+}
+
+.navActive {
+  display: block;
+}
+.navActive .nav_box {
+  display: none;
+}
+.navActive ul {
+  flex-direction: column;
+}
+.navActive ul li {
+  border-bottom: solid 1px #000;
+}
+
+footer {
+  background: #000;
+}
+
+.scroll_btn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #000;
+  box-shadow: 1px 1px #000;
+  border-radius: 50%;
+}
+.scroll_btn p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.upmove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.downmove {
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
+.None {
+  display: none;
+}
+
+.Block {
+  display: block;
+}
+
+.txtRed {
+  color: rgb(202, 54, 86);
+}
+
+.txtBlue {
+  color: rgb(1, 117, 146);
+}
+
+.main {
+  color: #000;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: #f7f2ea;
+  font-feature-settings: "palt";
+}
+
+.container {
+  height: 2500vh;
+}
+
+.fv_area {
+  height: 710px;
+}
+.fv_area .mv_box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fv_area .mv_box p {
+  margin: 0 auto;
+  font-family: "Lilita One", cursive;
+  font-size: 202px;
+  line-height: 0.8em;
+}
+
+.contents_area {
+  width: 100%;
+}
+.contents_area .sec01 {
+  margin: 100px auto 250px;
+}
+.contents_area .sec01 .txt_box {
+  text-align: center;
+}
+.contents_area .sec01 .txt_box p {
+  font-size: 20px;
+  line-height: 1.8em;
+}
+.contents_area .txt_box {
+  width: 900px;
+  margin: 0 auto;
+}
+.contents_area .txt_box h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.contents_area .txt_box p {
+  margin: 50px auto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+.contents_area .txt_box .codes {
+  width: 60%;
+  height: 100%;
+  background: #292929;
+  border-radius: 5px;
+  margin: 0;
+}
+.contents_area .txt_box .codes .code {
+  margin: 0;
+  padding: 3px 20px 20px;
+  font-size: 1.5rem;
+  background: #292929;
+}
+.contents_area .txt_box .codes .codeInfo {
+  width: 100%;
+  display: flex;
+  position: relative;
+  background: #292929;
+}
+.contents_area .txt_box .codes .codeInfo .langBox {
+  width: auto;
+  height: 3.5em;
+  margin: 0;
+}
+.contents_area .txt_box .codes .codeInfo .langBox i {
+  margin-right: 3px;
+}
+.contents_area .txt_box .codes .codeInfo .langBox .lang {
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px 0 2px 0;
+  color: #fff;
+  background: #050505;
+}
+.contents_area .txt_box .codes .codeInfo .txtCopyBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+}
+.contents_area .txt_box .codes .codeInfo .txtCopyBox .txtCopy {
+  width: 5.5rem;
+  height: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  margin: 3px;
+}
+.contents_area .txt_box .codes .codeInfo .txtCopyBox .txtCopy p {
+  font-size: 1rem;
+  margin-top: -4px;
+  font-weight: bold;
+}
+.contents_area .txt_box .codes .codeInfo .txtCopyBox .txtCopy p:nth-child(2) {
+  display: none;
+}
+.contents_area .txt_box .codes .codeInfo .txtCopyBox .txtCopy i {
+  margin: 0 0 0 3px;
+  font-size: 1.2rem;
+}
+.contents_area .menuTab .menuo {
+  width: 60%;
+  margin: 200px auto;
+}
+.contents_area .menuTab .menuo .menuT ul {
+  padding: 0 0 1rem;
+  display: flex;
+}
+.contents_area .menuTab .menuo .menuT ul:first-child {
+  border-bottom: 1px solid #000;
+}
+.contents_area .menuTab .menuo .menuT ul:last-child {
+  height: 0;
+  padding: 0;
+}
+.contents_area .menuTab .menuo .menuT ul li {
+  padding: 0 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(112, 112, 112, 0.6431372549);
+}
+.contents_area .menuTab .menuo .menuT ul li a {
+  cursor: pointer;
+}
+.contents_area .menuTab .menuo .menuT ul .active {
+  position: relative;
+  display: block;
+  color: #000;
+}
+@keyframes tabAct {
+  0% {
+    transform: translateX();
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contents_area .menuTab .menuo .menuT ul .dotTabFirst {
+  margin-top: 6px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.contents_area .menuTab .menuo .menuT ul .dotTabFirst .animeActive {
+  width: 0.35em;
+  height: 0.22em;
+  border-radius: 380px 380px 0 0;
+  background: #000;
+  transition: 0.2s;
+}
+.contents_area .menuTab .menuo .menuT ul .dotTab {
+  margin-top: 6px;
+  position: absolute;
+  left: -0.3rem;
+  display: none;
+  pointer-events: none;
+}
+.contents_area .menuTab .menuo .menuT ul .dotTab .animeActive {
+  width: 0.33em;
+  height: 0.22em;
+  margin: 0 auto;
+  border-radius: 380px 380px 0 0;
+  background: #000;
+  transition: 0.1s;
+}
+@keyframes tabAct {
+  0% {
+    transform: translateX();
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contents_area .menuTab .menuo .menuT .menuText .menup {
+  display: none;
+  justify-content: space-between;
+}
+.contents_area .menuTab .menuo .menuT .menuText .menup a {
+  width: calc(33.3333333333% - 10px);
+  display: block;
+  margin: 1.5em;
+  font-size: 16px;
+}
+.contents_area .menuTab .menuo .menuT .menuText .menup a img {
+  display: block;
+}
+.contents_area .menuTab .menuo .menuT .menuText .active {
+  transition: transform 1s;
+  transition: 0.2s;
+  animation: fadeIn 0.3s ease-in;
+  display: flex;
+}
+@keyframes tabAnimetion {
+  0% {
+    transition: 0.2s;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sample_area {
+  padding-bottom: 55px;
+  display: flex;
+  gap: 50px;
+  border-bottom: solid 1px #000;
+}
+
+.sample_box {
+  width: 50%;
+  height: 100%;
+  padding: 5%;
+  background: #fff;
+  border-radius: 5px;
+}
+.sample_box .artboard {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  text-align: center;
+}
+.sample_box .artboard .square {
+  width: 50px;
+  height: 50px;
+  background-color: #e65555;
+}
+
+.s02 {
+  text-align: center;
+}/*# sourceMappingURL=layout.css.map */
