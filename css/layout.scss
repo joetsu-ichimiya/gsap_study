@@ -1,0 +1,404 @@
+@charset "utf-8";
+@import "common";
+//@import "mixin";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+
+.main {
+    color: #000;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: $bgcolor;
+    font-feature-settings: "palt";
+}
+
+.container {
+    height: 2500vh;
+}
+.fv_area {
+    height: 500px;
+
+    .mv_box {
+        width: 90%;
+        position: relative;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p {
+            margin: 0 auto;
+            font-family: "Lilita One", cursive;
+            font-size: 150px;
+            line-height: 0.8em;
+        }
+    }
+}
+// .z-layer:not(:first-child) {
+//     color: #e0abab;
+// }
+.contents_area {
+    width: 100%;
+    // .viewTransitons {
+    //     .box {
+    //         width: 60%;
+    //         margin: 0 auto 500px;
+    //         .boxs {
+    //             display: flex;
+    //             margin: 0 auto 500px;
+    //             .li {
+    //                 // float: left;
+    //                 width: calc(100% / 2 - 150px);
+    //                 margin: 30px;
+    //                 text-align: center;
+    //                 // display: flex;
+    //                 background-color: #ffffff;
+    //                 .a {
+    //                     width: 100%;
+    //                     padding: calc(150px / 2);
+    //                     font-size: 2rem;
+    //                     text-align: center;
+    //                     p {
+    //                         margin: 50px auto;
+    //                     }
+    //                 }
+    //                 .libtn {
+    //                     width: 100%;
+    //                     margin: 10px auto;
+    //                     padding: 1rem;
+    //                     display: inline-block;
+    //                     background-color: #000000;
+    //                     color: #fff;
+    //                     font-size: 1em;
+    //                 }
+    //             }
+    //             .libtn {
+    //                 width: 100%;
+    //                 margin: 10px auto;
+    //                 padding: 1rem;
+    //                 display: inline-block;
+    //                 background-color: #000000;
+    //                 color: #fff;
+    //                 font-size: 1em;
+    //             }
+    //         }
+    //     }
+    //     .pages {
+    //         position: relative;
+    //         top: 0;
+    //         left: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         padding: 20px;
+    //     }
+
+    //     .page {
+    //         position: fixed;
+    //         top: 0;
+    //         left: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         box-sizing: border-box;
+    //         padding: 20px;
+    //         overflow: auto;
+    //         // display: flex;
+    //         justify-content: space-between;
+    //         background-color: #fff;
+
+    //         margin: 100px auto;
+    //         padding: 50px;
+    //         font-size: 2rem;
+    //         text-align: center;
+    //         p {
+    //             height: 100px;
+    //             margin: 50px auto;
+    //         }
+    //         a {
+    //             width: 20%;
+    //             margin: 20px auto 0;
+    //             padding: 2rem;
+    //             display: inline-block;
+    //             background-color: #000000;
+    //             color: #fff;
+    //             font-size: 1em;
+    //         }
+    //     }
+    // }
+
+    .sec01 {
+        margin: 100px auto 250px;
+
+        .txt_box {
+            text-align: center;
+            p {
+                font-size: 20px;
+                line-height: 1.8em;
+            }
+        }
+    }
+    .txt_box {
+        width: 900px;
+        margin: 0 auto;
+        h2 {
+            margin-bottom: 1em;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 2.3rem;
+            font-weight: bold;
+        }
+        p {
+            margin: 20px auto 50px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.5em;
+        }
+        .read {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .codes {
+            width: 60%;
+            height: 100%;
+            background: $codebg;
+            border-radius: 5px;
+            margin: 0;
+
+            .code {
+                margin: 0;
+                padding: 3px 20px 20px;
+                font-size: 1.5rem;
+                background: $codebg;
+                border-radius: 5px;
+            }
+            .codeInfo {
+                width: 100%;
+                display: flex;
+                position: relative;
+                background: $codebg;
+                border-radius: 5px 10px 0 0;
+                .langBox {
+                    width: auto;
+                    height: 3.5em;
+                    margin: 0;
+
+                    i {
+                        margin-right: 3px;
+                    }
+                    .lang {
+                        padding: 0.3rem 0.5rem;
+                        color: #fff;
+                        background: #050505;
+                        border-radius: 5px 0 2px 0;
+                    }
+                }
+
+                .txtCopyBox {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: #fff;
+                    border-radius: 0 5px 0 2px; 
+                    .txtCopy {
+                        width: 5.5rem;
+                        height: 1.3rem;
+                        cursor: pointer;
+                        display: flex;
+                        margin: 3px;
+                        
+                        p {
+                            font-size: 1rem;
+                            margin-top: -4px;
+                            font-weight: bold;
+                            &:nth-child(2) {
+                                display: none;
+                            }
+                        }
+
+                        i {
+                            margin: 0 0 0 3px;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+.menuTab {
+        .menuo {
+            width: 50%;
+            margin: 100px auto 200px;
+            .menuT {
+                ul {
+                    padding: 0 0 1rem;
+                    display: flex;
+                    &:first-child {
+                        border-bottom: 1px solid #000;
+                    }
+                    &:last-child {
+                        height: 0;
+                        padding: 0;
+                    }
+                    li {
+                        padding: 0; /* ←左右paddingを0に */
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: #707070a4;
+
+                        a {
+                            cursor: pointer;
+                            padding: 0 2rem; /* 必要ならここで調整 */
+                            display: inline-block;
+                            position: relative;
+                        }
+                    }
+                    .active {
+                        position: relative;
+                        display: block;
+                        color: #000;
+                        @keyframes tabAct {
+                            0% {
+                                transform: translateX();
+                            }
+                            100% {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .dotTabFirst {
+                        margin-top: 6px;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        pointer-events: none;
+                        .animeActive {
+                            width: 0.35em;
+                            height: 0.22em;
+                            border-radius: 380px 380px 0 0;
+                            background: #000;
+                            transition: 0.2s;
+                        }
+                    }
+                    .dotTab {
+                        margin-top: 6px;
+                        position: absolute;
+                        left: -0.3rem;
+                        display: none;
+                        pointer-events: none;
+                        .animeActive {
+                            //=dot
+                            width: 0.33em;
+                            height: 0.22em;
+                            margin: 0 auto;
+                            border-radius: 380px 380px 0 0;
+                            background: #000;
+                            transition: 0.1s;
+                        }
+                    }
+                }
+
+                @keyframes tabAct {
+                    0% {
+                        transform: translateX();
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+
+                .menuText {
+                    .menup {
+                        display: none;
+                        justify-content: space-between;
+                        a {
+                            width: calc(100% / 3 - 10px);
+                            display: block;
+                            margin: 1.5em;
+                            font-size: 16px;
+
+                            img {
+                                display: block;
+                            }
+                        }
+                    }
+                    .active {
+                        transition: transform 1s;
+                        transition: 0.2s;
+                        animation: fadeIn 0.3s ease-in;
+                        display: flex;
+                    }
+                    @keyframes tabAnimetion {
+                        0% {
+                            transition: 0.2s;
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .li1 {
+//     view-transition-name: li1;
+//     contain: paint;
+// }
+// .lis {
+//     view-transition-name: lis;
+//     contain: paint;
+// }
+// .pdfBtnBox {
+//     width: auto;
+//     text-align: right;
+//     display: flex;
+// }
+// .pdfBtn {
+//     background: #8a8a8a;
+//     width: 12rem;
+//     display: flex;
+//     font-size: 16px;
+//     text-align: right;
+// }
+.sample_area {
+    padding-bottom: 55px;
+    display: flex;
+    gap: 50px;
+    border-bottom: solid 1px #000;
+}
+.sample_box {
+    width: calc(100% / 2);
+    height: 100%;
+    padding: 5%;
+    background: #fff;
+    border-radius: 5px;
+    .artboard {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        text-align: center;
+        .square {
+            width: 50px;
+            height: 50px;
+            background-color: #e65555;
+        } 
+    }
+    
+}
+.s02 {
+    text-align: center;
+}
+
+.sec {
+    margin-bottom: 50px;
+    
+}
+#codesumple {
+    border-radius: 5px;
+    font-size: 1.5rem;
+}

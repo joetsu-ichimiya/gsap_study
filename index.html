@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>gsap見本帳</title>
+
+        <!--description-->
+        <meta name="description" content="" />
+
+        <!--link & script-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/destyle.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai-sublime.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/7a16ce6be6.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header class="header" id="header">
+                <div class="nav_box" id="nav_box">
+                    <ul id="navul">
+                        <li class="nav">
+                            <a href="" class="js-anchor">基本的な動作</a>
+                        </li>
+                        <li class="nav">
+                            <a href="#sec02" class="js-anchor">020202</a>
+                        </li>
+                        <li class="nav">
+                            <a href="#sec03" class="js-anchor">030303</a>
+                        </li>
+                        <li class="nav">
+                            <a href="#sec04" class="js-anchor">040404</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="SnavMusk"></div>
+                <div class="small_nav" id="small_nav">
+                    <div class="openbtn" id="openbtn">
+                        <span id="close"></span>
+                        <span></span>
+                        <span class="close"></span>
+                    </div>
+                </div>
+            </header>
+
+            <main class="cotainer">
+                <div class="fv_area" id="fv">
+                    <div class="mv_box">
+                        <h1>
+                            gsap見本帳
+                        </h1>
+                    </div>
+                </div>
+                <div class="contents_area">
+                    <!-- ダブメニュー -->
+                    <div class="js-anchor sec wrap menuTab" id="sec04">
+                        <div class="menuo">
+                            <div class="menuT" data-tabs="">
+                                <ul id="menuU">
+                                    <li>
+                                        <a class="menutab active pore" data-tab="">
+                                            基本的な動作
+                                            <div class="dotTabFirst">
+                                                <div class="animeActive"></div>
+                                            </div>
+                                            <div class="dotTab">
+                                                <div class="animeActive"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menutab animeNonActive" data-tab="" >
+                                            02
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menutab animeNonActive" data-tab="" >
+                                            000000000002
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menutab animeNonActive" data-tab="" >
+                                            00003
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            <div class="menuText">
+                                <div
+                                    class="menup menu active animeActive"
+                                    data-tab-text=""
+                                >
+                                    <a href="#sec01">移動</a>
+                                    <a href="">aaa</a>
+                                    <a href="">aaa</a>
+                                    <a href="">aaa</a>
+                                </div>
+                                <div class="menup menu" data-tab-text="">
+                                    <a href="" class="stagger">bbb</a
+                                    >
+                                    <a href="" class="stagger">bbb</a
+                                    >
+                                    <a href="" class="stagger">bbb</a
+                                    >
+                                    <a href="" class="stagger">bbb</a>
+                                </div>
+                                <div class="menup menu" data-tab-text="">
+                                    <a href="" class="stagger">ccc</a
+                                    ><a href="" class="stagger">ccc</a
+                                    ><a href="" class="stagger">ccc</a
+                                    ><a href="" class="stagger">ccc</a>
+                                </div>
+                                <div class="menup menu" data-tab-text="">
+                                    <a href="" class="stagger">ddd</a
+                                    ><a href="" class="stagger">ddd</a
+                                    ><a href="" class="stagger">bbb</a
+                                    ><a href="" class="stagger">bbb</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- コンテンツ -->
+                    <h2>基本的な動作</h2>
+                    <div class="txt_box">
+                    <h2>基本的な動作</h2>
+                    <p>どう動くか（cssのプロパティと同じ表記）、何秒かけて動くか（duration）の2項目指定が必須。</br>
+                        <pre><code class="code" id="codesumple">
+gsap.to("オブジェクトを指定", { 
+    動きのプロパティ: 数値 ,
+    何秒かけるか: 秒数,
+});
+                        </code></pre>
+                    </p>
+                    <div class="js-anchor sec" id="#sec01">
+                        <div class="txt_box">
+                            <div class="txt_box">
+                                <h3 class="read">移動</h3>
+                                <p>
+                                    【xまたはy ： 数値,】<br/>各軸にどれくらい移動させるか<br />
+                                
+                                </p>
+                            </div>
+                            <div class="sample_area">
+                                <div class="sample_box">
+                                    <div class="artboard">
+                                        <div class="square a01"></div>
+                                    </div>
+                                </div>
+
+                                <div class="codes js-anchor">
+                        <div class="codeInfo">
+                        <!-- lang -->
+                            <div class="langBox">
+                                <div class="lang">
+                                    <i class="fa-solid fa-code"></i>.js
+                                </div>
+                            </div>
+                        <!-- copy -->
+                            <div class="txtCopyBox">
+                                <div class="txtCopy Copy ov" id="Copy" aria-describedby="tooltip">
+                                    <p class="CopyAnime" id="txtCopyNoneActive">
+                                        copy
+                                    </p>
+                                    <i class="fa-solid fa-copy CopyAnime"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="codeBox">
+                        <pre><code class="code" id="code1">
+gsap.to(".rect", { x: 200 ,duration: 1.3,});
+            
+    </code></pre>
+                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> 
+                <!-- 2 -->
+                    <div class="js-anchor sec" id="article02">
+                        <div class="txt_box">
+                            <div class="txt_box">
+                            <h3 class="read">色変更</h3>
+                            <p>
+                                【color ： 数値,】変更後の色
+                            </p>
+                            </div>
+                            <div class="sample_area">
+                                <div class="sample_box">
+                                    <div class="artboard">
+                                        <div class="square s02"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="codes js-anchor">
+                                <div class="codeInfo">
+                        <!-- lang -->
+                                <div class="langBox">
+                                    <div class="lang">
+                                        <i class="fa-solid fa-code"></i>.js
+                                    </div>
+                                </div>
+                        <!-- copy -->
+                                <div class="txtCopyBox">
+                                    <div class="txtCopy Copy ov" id="Copy" aria-describedby="tooltip">
+                                        <p class="CopyAnime" id="txtCopyNoneActive">
+                                            copy
+                                        </p>
+                                        <i class="fa-solid fa-copy CopyAnime"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="codeBox">
+                            <pre><code class="code" id="code1">
+gsap.to(".rect", {
+    backgroundColor: "#abcfe0" ,
+    duration: 1.3,
+});           
+        </code></pre>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="js-anchor sec" id="article02">
+                        <div class="txt_box">
+                            <div class="txt_box">
+                            <h3 class="read">透明度変更</h3>
+                            <p>
+                                【opacity ： 数値,】1~0までの数値
+                            </p>
+                            </div>
+                            <div class="sample_area">
+                                <div class="sample_box">
+                                    <div class="artboard">
+                                        <div class="square s03"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="codes js-anchor">
+                                <div class="codeInfo">
+                        <!-- lang -->
+                                <div class="langBox">
+                                    <div class="lang">
+                                        <i class="fa-solid fa-code"></i>.js
+                                    </div>
+                                </div>
+                        <!-- copy -->
+                                <div class="txtCopyBox">
+                                    <div class="txtCopy Copy ov" id="Copy" aria-describedby="tooltip">
+                                        <p class="CopyAnime" id="txtCopyNoneActive">
+                                            copy
+                                        </p>
+                                        <i class="fa-solid fa-copy CopyAnime"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="codeBox">
+                            <pre><code class="code" id="code1">
+gsap.to(".rect", {
+    opacity: 0.5 ,
+    duration: 1.3,
+});           
+        </code></pre>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="js-anchor sec" id="article02">
+                        <div class="txt_box">
+                            <div class="txt_box">
+                            <h3 class="read">透明度変更</h3>
+                            <p>
+                                【opacity ： 数値,】1~0までの数値<br />
+                            </p>
+                            </div>
+                            <div class="sample_area">
+                                <div class="sample_box">
+                                    <div class="artboard">
+                                        <div class="square s032"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="codes js-anchor">
+                                <div class="codeInfo">
+                        <!-- lang -->
+                                <div class="langBox">
+                                    <div class="lang">
+                                        <i class="fa-solid fa-code"></i>.js
+                                    </div>
+                                </div>
+                        <!-- copy -->
+                                <div class="txtCopyBox">
+                                    <div class="txtCopy Copy ov" id="Copy" aria-describedby="tooltip">
+                                        <p class="CopyAnime" id="txtCopyNoneActive">
+                                            copy
+                                        </p>
+                                        <i class="fa-solid fa-copy CopyAnime"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="codeBox">
+                            <pre><code class="code" id="code1">
+gsap.to(".rect", {
+    rotate: 45deg,
+    duration: 1.3,
+});           
+        </code></pre>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            
+                <div class="scroll_btn">
+                    <p><i class="fa-solid fa-arrow-up"></i></p>
+                </div>
+            </main>
+
+            <footer class="footer"></footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+       
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+        <script src="js/ztext.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+        <script>
+            const setupLenis = () => {
+                const lenis = new Lenis({
+                    lerp: 0, // 慣性の強さ
+                    duration: 0.2, // スクロールアニメーションの時間
+                    easing: easeOutQuart, // イージング関数
+                    smoothTouch: true, // タッチイベントでも慣性スクロールを有効にする
+                });
+
+                function raf(time) {
+                    lenis.raf(time);
+                    requestAnimationFrame(raf);
+                }
+
+                requestAnimationFrame(raf);
+
+                return lenis;
+            };
+
+            const easeOutQuart = (x) => {
+                return 1 - Math.pow(1 - x, 4);
+            };
+
+            const lenis = setupLenis();
+
+
+        </script>
+        <script src="js/script_M copy 3.js"></script>
+        <script src="js/gsap.js"></script>
+    </body>
+</html>
+
