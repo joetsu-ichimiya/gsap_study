@@ -18,4 +18,21 @@ gsap.to(".s02", {
     duration: 1.5,
     repeat: -1,//繰り返し
     repeatDelay: 0.5,
+<<<<<<< HEAD
 });
+=======
+});
+gsap.to(".s03", {
+    opacity: 0.3,
+    duration: 1.3,
+    repeat: -1,//繰り返し
+    repeatDelay: 0.5,
+});
+gsap.to(".s032", {
+    rotate: 50,
+    duration: 1.3,
+    repeat: -1,//繰り返し
+    repeatDelay: 0.5,
+});
+
+>>>>>>> 7a5b2bc (0704)

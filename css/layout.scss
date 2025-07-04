@@ -18,17 +18,30 @@ main {
     height: 2500vh;
 }
 .fv_area {
+<<<<<<< HEAD
     height: 710px;
 
     .mv_box {
         position: relative;
         top: 50%;
+=======
+    height: 500px;
+
+    .mv_box {
+        width: 90%;
+        position: relative;
+        top: 60%;
+>>>>>>> 7a5b2bc (0704)
         left: 50%;
         transform: translate(-50%, -50%);
         p {
             margin: 0 auto;
             font-family: "Lilita One", cursive;
+<<<<<<< HEAD
             font-size: 202px;
+=======
+            font-size: 150px;
+>>>>>>> 7a5b2bc (0704)
             line-height: 0.8em;
         }
     }
@@ -138,18 +151,36 @@ main {
     .txt_box {
         width: 900px;
         margin: 0 auto;
+<<<<<<< HEAD
+=======
+        h2 {
+            margin-bottom: 1em;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+>>>>>>> 7a5b2bc (0704)
         h3 {
             font-size: 2.3rem;
             font-weight: bold;
         }
         p {
+<<<<<<< HEAD
             margin: 50px auto;
+=======
+            margin: 20px auto 50px;
+>>>>>>> 7a5b2bc (0704)
             font-size: 18px;
             font-weight: 500;
             line-height: 1.5em;
         }
+<<<<<<< HEAD
         .txt_box {
             // text-align: center;
+=======
+        .read {
+            font-size: 1.8rem;
+            font-weight: bold;
+>>>>>>> 7a5b2bc (0704)
         }
 
         .codes {
@@ -164,12 +195,20 @@ main {
                 padding: 3px 20px 20px;
                 font-size: 1.5rem;
                 background: $codebg;
+<<<<<<< HEAD
+=======
+                border-radius: 5px;
+>>>>>>> 7a5b2bc (0704)
             }
             .codeInfo {
                 width: 100%;
                 display: flex;
                 position: relative;
                 background: $codebg;
+<<<<<<< HEAD
+=======
+                border-radius: 5px 10px 0 0;
+>>>>>>> 7a5b2bc (0704)
                 .langBox {
                     width: auto;
                     height: 3.5em;
@@ -180,9 +219,15 @@ main {
                     }
                     .lang {
                         padding: 0.3rem 0.5rem;
+<<<<<<< HEAD
                         border-radius: 5px 0 2px 0;
                         color: #fff;
                         background: #050505;
+=======
+                        color: #fff;
+                        background: #050505;
+                        border-radius: 5px 0 2px 0;
+>>>>>>> 7a5b2bc (0704)
                     }
                 }
 
@@ -191,6 +236,10 @@ main {
                     top: 0;
                     right: 0;
                     background: #fff;
+<<<<<<< HEAD
+=======
+                    border-radius: 0 5px 0 2px; 
+>>>>>>> 7a5b2bc (0704)
                     .txtCopy {
                         width: 5.5rem;
                         height: 1.3rem;
@@ -214,12 +263,21 @@ main {
                     }
                 }
             }
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 7a5b2bc (0704)
         }
     }
 .menuTab {
         .menuo {
+<<<<<<< HEAD
             width: 60%;
             margin: 200px auto;
+=======
+            width: 50%;
+            margin: 100px auto 200px;
+>>>>>>> 7a5b2bc (0704)
             .menuT {
                 ul {
                     padding: 0 0 1rem;
@@ -232,13 +290,23 @@ main {
                         padding: 0;
                     }
                     li {
+<<<<<<< HEAD
                         padding: 0 2rem;
+=======
+                        padding: 0; /* ←左右paddingを0に */
+>>>>>>> 7a5b2bc (0704)
                         font-size: 20px;
                         font-weight: bold;
                         color: #707070a4;
 
                         a {
                             cursor: pointer;
+<<<<<<< HEAD
+=======
+                            padding: 0 2rem; /* 必要ならここで調整 */
+                            display: inline-block;
+                            position: relative;
+>>>>>>> 7a5b2bc (0704)
                         }
                     }
                     .active {
@@ -378,4 +446,16 @@ main {
 }
 .s02 {
     text-align: center;
+<<<<<<< HEAD
+=======
+}
+
+.sec {
+    margin-bottom: 50px;
+    
+}
+#codesumple {
+    border-radius: 5px;
+    font-size: 1.5rem;
+>>>>>>> 7a5b2bc (0704)
 }

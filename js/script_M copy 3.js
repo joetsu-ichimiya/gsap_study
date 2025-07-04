@@ -99,6 +99,10 @@ let codeBox = document.getElementsByClassName("codeBox");
 const CopyNoneAtv = document.getElementById("txtCopyNoneActive");
 const CopyAtv = document.getElementById("txtCopyActive");
 const copy = document.getElementById("a");
+<<<<<<< HEAD
+=======
+const copyTxt = document.getElementById("Copy");
+>>>>>>> 7a5b2bc (0704)
 const copid = gsap.to("btn1", {
     duration: 1, // 秒指定
     x: 70,
@@ -110,7 +114,12 @@ for (i = 0; i < btn1.length; i++) {
 }
 function codeCopy(btn1DOM, btn1Id) {
     btn1DOM.addEventListener("click", () => {
+<<<<<<< HEAD
         gsap.to(btn1DOM, {
+=======
+        
+        gsap.to(btn1DOM.querySelector("p"), {
+>>>>>>> 7a5b2bc (0704)
             y: -2,
             duration: 0.1, // 秒指定
             repeat: 1,
@@ -218,7 +227,13 @@ if (tabElm.length > 0) {
 
 let active = document.querySelectorAll(".active");
 
+<<<<<<< HEAD
 let dotTab = document.querySelector(".dotTab");
+=======
+let menuW = document.querySelector("#sec04");
+let dotTab = document.querySelector(".dotTab");
+let tabUl = document.querySelector("#menuU"); 
+>>>>>>> 7a5b2bc (0704)
 dotTab.style.display = "none";
 
 if (tabElm.length > 0) {
@@ -230,6 +245,7 @@ if (tabElm.length > 0) {
             let tabBtnF = tabBtnElm[f];
 
             tabBtnF.addEventListener("click", () => {
+<<<<<<< HEAD
                 for (let f = 0; f < tabBtnElm.length; f++) {
                     console.log("kokomadeugoku");
 
@@ -264,6 +280,35 @@ if (tabElm.length > 0) {
                     dotTabFirst.style.opacity = "0";
                     // dotTabFirst.style.le = "0";
                 }
+=======
+                // ドット取得
+                let dotTab = tab.querySelector(".dotTab");
+                if (!dotTab) return;
+
+let tabUlW = tabUl.getBoundingClientRect().width; 
+                // タブボタン自身の座標
+                let btnRect = tabBtnF.getBoundingClientRect();
+                // メニュー全体の左端
+                let menuLeft = menuW.getBoundingClientRect().left;
+                // ドットの幅
+                let dotTabRect = dotTab.getBoundingClientRect();
+                // タブ中央 - ドット幅/2
+                let tabpoint = btnRect.left - menuLeft + btnRect.width / 2 - dotTabRect.width / 2;
+                let tabpoint2 = tabpoint - tabUlW / 2 + dotTabRect.width / 2; // ドットの位置を微調整
+
+                gsap.to(dotTab, {
+                    x: tabpoint2,
+                    autoAlpha: 1,
+                    duration: 0.1,
+                    overwrite: true,
+                });
+
+                dotTab.style.display = "block";
+
+                // 最初の点
+                let dotTabFirst = tab.querySelector(".dotTabFirst");
+                if (dotTabFirst) dotTabFirst.style.opacity = "0";
+>>>>>>> 7a5b2bc (0704)
             });
         }
     }

@@ -343,18 +343,31 @@ main {
 }
 
 .fv_area {
+<<<<<<< HEAD
   height: 710px;
 }
 .fv_area .mv_box {
   position: relative;
   top: 50%;
+=======
+  height: 500px;
+}
+.fv_area .mv_box {
+  width: 90%;
+  position: relative;
+  top: 60%;
+>>>>>>> 7a5b2bc (0704)
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .fv_area .mv_box p {
   margin: 0 auto;
   font-family: "Lilita One", cursive;
+<<<<<<< HEAD
   font-size: 202px;
+=======
+  font-size: 150px;
+>>>>>>> 7a5b2bc (0704)
   line-height: 0.8em;
 }
 
@@ -375,16 +388,35 @@ main {
   width: 900px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
+=======
+.contents_area .txt_box h2 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  font-weight: bold;
+}
+>>>>>>> 7a5b2bc (0704)
 .contents_area .txt_box h3 {
   font-size: 2.3rem;
   font-weight: bold;
 }
 .contents_area .txt_box p {
+<<<<<<< HEAD
   margin: 50px auto;
+=======
+  margin: 20px auto 50px;
+>>>>>>> 7a5b2bc (0704)
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5em;
 }
+<<<<<<< HEAD
+=======
+.contents_area .txt_box .read {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+>>>>>>> 7a5b2bc (0704)
 .contents_area .txt_box .codes {
   width: 60%;
   height: 100%;
@@ -397,12 +429,20 @@ main {
   padding: 3px 20px 20px;
   font-size: 1.5rem;
   background: #292929;
+<<<<<<< HEAD
+=======
+  border-radius: 5px;
+>>>>>>> 7a5b2bc (0704)
 }
 .contents_area .txt_box .codes .codeInfo {
   width: 100%;
   display: flex;
   position: relative;
   background: #292929;
+<<<<<<< HEAD
+=======
+  border-radius: 5px 10px 0 0;
+>>>>>>> 7a5b2bc (0704)
 }
 .contents_area .txt_box .codes .codeInfo .langBox {
   width: auto;
@@ -414,15 +454,25 @@ main {
 }
 .contents_area .txt_box .codes .codeInfo .langBox .lang {
   padding: 0.3rem 0.5rem;
+<<<<<<< HEAD
   border-radius: 5px 0 2px 0;
   color: #fff;
   background: #050505;
+=======
+  color: #fff;
+  background: #050505;
+  border-radius: 5px 0 2px 0;
+>>>>>>> 7a5b2bc (0704)
 }
 .contents_area .txt_box .codes .codeInfo .txtCopyBox {
   position: absolute;
   top: 0;
   right: 0;
   background: #fff;
+<<<<<<< HEAD
+=======
+  border-radius: 0 5px 0 2px;
+>>>>>>> 7a5b2bc (0704)
 }
 .contents_area .txt_box .codes .codeInfo .txtCopyBox .txtCopy {
   width: 5.5rem;
@@ -444,8 +494,13 @@ main {
   font-size: 1.2rem;
 }
 .contents_area .menuTab .menuo {
+<<<<<<< HEAD
   width: 60%;
   margin: 200px auto;
+=======
+  width: 50%;
+  margin: 100px auto 200px;
+>>>>>>> 7a5b2bc (0704)
 }
 .contents_area .menuTab .menuo .menuT ul {
   padding: 0 0 1rem;
@@ -459,13 +514,23 @@ main {
   padding: 0;
 }
 .contents_area .menuTab .menuo .menuT ul li {
+<<<<<<< HEAD
   padding: 0 2rem;
+=======
+  padding: 0; /* ←左右paddingを0に */
+>>>>>>> 7a5b2bc (0704)
   font-size: 20px;
   font-weight: bold;
   color: rgba(112, 112, 112, 0.6431372549);
 }
 .contents_area .menuTab .menuo .menuT ul li a {
   cursor: pointer;
+<<<<<<< HEAD
+=======
+  padding: 0 2rem; /* 必要ならここで調整 */
+  display: inline-block;
+  position: relative;
+>>>>>>> 7a5b2bc (0704)
 }
 .contents_area .menuTab .menuo .menuT ul .active {
   position: relative;
@@ -574,4 +639,16 @@ main {
 
 .s02 {
   text-align: center;
+<<<<<<< HEAD
+=======
+}
+
+.sec {
+  margin-bottom: 50px;
+}
+
+#codesumple {
+  border-radius: 5px;
+  font-size: 1.5rem;
+>>>>>>> 7a5b2bc (0704)
 }/*# sourceMappingURL=layout.css.map */
