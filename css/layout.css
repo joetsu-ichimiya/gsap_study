@@ -353,21 +353,26 @@ main {
   height: 500px;
 }
 .fv_area .mv_box {
-  width: 90%;
+  width: 60%;
   position: relative;
   top: 60%;
 >>>>>>> 7a5b2bc (0704)
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.fv_area .mv_box p {
+.fv_area .mv_box h1 {
   margin: 0 auto;
   font-family: "Lilita One", cursive;
+<<<<<<< HEAD
 <<<<<<< HEAD
   font-size: 202px;
 =======
   font-size: 150px;
 >>>>>>> 7a5b2bc (0704)
+=======
+  font-size: 6rem;
+  font-weight: bold;
+>>>>>>> 70b6640 (Refactor layout styles and improve responsiveness; update HTML structure for consistency; enhance JavaScript functionality for navigation and tab interactions.)
   line-height: 0.8em;
 }
 
@@ -384,9 +389,13 @@ main {
   font-size: 20px;
   line-height: 1.8em;
 }
+.contents_area .sec {
+  border-top: solid 1px #000;
+}
 .contents_area .txt_box {
   width: 900px;
   margin: 0 auto;
+  padding: 0 2%;
 }
 <<<<<<< HEAD
 =======
@@ -400,13 +409,28 @@ main {
   font-size: 2.3rem;
   font-weight: bold;
 }
+.contents_area .txt_box h3::before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 1em;
+  background: #000;
+  border-radius: 2px;
+  margin-right: 0.3em;
+  margin-bottom: -0.1em;
+}
 .contents_area .txt_box p {
+<<<<<<< HEAD
 <<<<<<< HEAD
   margin: 50px auto;
 =======
   margin: 20px auto 50px;
 >>>>>>> 7a5b2bc (0704)
   font-size: 18px;
+=======
+  margin: 12px 2rem 50px;
+  font-size: 1.4rem;
+>>>>>>> 70b6640 (Refactor layout styles and improve responsiveness; update HTML structure for consistency; enhance JavaScript functionality for navigation and tab interactions.)
   font-weight: 500;
   line-height: 1.5em;
 }
@@ -420,19 +444,20 @@ main {
 .contents_area .txt_box .codes {
   width: 60%;
   height: 100%;
-  background: #292929;
   border-radius: 5px;
-  margin: 0;
 }
 .contents_area .txt_box .codes .code {
-  margin: 0;
-  padding: 3px 20px 20px;
+  padding: 0 5rem 0.5rem;
   font-size: 1.5rem;
   background: #292929;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   border-radius: 5px;
 >>>>>>> 7a5b2bc (0704)
+=======
+  border-radius: 0 0 5px 5px;
+>>>>>>> 70b6640 (Refactor layout styles and improve responsiveness; update HTML structure for consistency; enhance JavaScript functionality for navigation and tab interactions.)
 }
 .contents_area .txt_box .codes .codeInfo {
   width: 100%;
@@ -446,8 +471,9 @@ main {
 }
 .contents_area .txt_box .codes .codeInfo .langBox {
   width: auto;
-  height: 3.5em;
+  height: 2em;
   margin: 0;
+<<<<<<< HEAD
 }
 .contents_area .txt_box .codes .codeInfo .langBox i {
   margin-right: 3px;
@@ -460,9 +486,18 @@ main {
   background: #050505;
 =======
   color: #fff;
+=======
+  padding: 0.5rem 0.5rem;
+>>>>>>> 70b6640 (Refactor layout styles and improve responsiveness; update HTML structure for consistency; enhance JavaScript functionality for navigation and tab interactions.)
   background: #050505;
   border-radius: 5px 0 2px 0;
 >>>>>>> 7a5b2bc (0704)
+}
+.contents_area .txt_box .codes .codeInfo .langBox .lang {
+  color: #fff;
+}
+.contents_area .txt_box .codes .codeInfo .langBox .lang i {
+  margin-right: 3px;
 }
 .contents_area .txt_box .codes .codeInfo .txtCopyBox {
   position: absolute;
@@ -475,22 +510,24 @@ main {
 >>>>>>> 7a5b2bc (0704)
 }
 .contents_area .txt_box .codes .codeInfo .txtCopyBox .txtCopy {
-  width: 5.5rem;
+  width: 6rem;
   height: 1.3rem;
   cursor: pointer;
   display: flex;
   margin: 3px;
 }
 .contents_area .txt_box .codes .codeInfo .txtCopyBox .txtCopy p {
+  width: 5.5rem;
   font-size: 1rem;
   margin-top: -4px;
+  margin: -4px 0.5rem -0.1rem;
   font-weight: bold;
 }
 .contents_area .txt_box .codes .codeInfo .txtCopyBox .txtCopy p:nth-child(2) {
   display: none;
 }
 .contents_area .txt_box .codes .codeInfo .txtCopyBox .txtCopy i {
-  margin: 0 0 0 3px;
+  margin-bottom: 3px;
   font-size: 1.2rem;
 }
 .contents_area .menuTab .menuo {
@@ -587,10 +624,15 @@ main {
   justify-content: space-between;
 }
 .contents_area .menuTab .menuo .menuT .menuText .menup a {
-  width: calc(33.3333333333% - 10px);
+  width: calc(25% - 10px);
+  text-align: center;
   display: block;
-  margin: 1.5em;
+  margin: 1.3em;
   font-size: 16px;
+  border-right: 1px solid #000;
+}
+.contents_area .menuTab .menuo .menuT .menuText .menup a:last-child {
+  border-right: none;
 }
 .contents_area .menuTab .menuo .menuT .menuText .menup a img {
   display: block;
@@ -615,7 +657,6 @@ main {
   padding-bottom: 55px;
   display: flex;
   gap: 50px;
-  border-bottom: solid 1px #000;
 }
 
 .sample_box {
