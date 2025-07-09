@@ -491,12 +491,15 @@ main {
 >>>>>>> 70b6640 (Refactor layout styles and improve responsiveness; update HTML structure for consistency; enhance JavaScript functionality for navigation and tab interactions.)
   background: #050505;
   border-radius: 5px 0 2px 0;
+<<<<<<< HEAD
 >>>>>>> 7a5b2bc (0704)
 }
 .contents_area .txt_box .codes .codeInfo .langBox .lang {
+=======
+>>>>>>> 9e648df (0709)
   color: #fff;
 }
-.contents_area .txt_box .codes .codeInfo .langBox .lang i {
+.contents_area .txt_box .codes .codeInfo .langBox i {
   margin-right: 3px;
 }
 .contents_area .txt_box .codes .codeInfo .txtCopyBox {
@@ -532,10 +535,14 @@ main {
 }
 .contents_area .menuTab .menuo {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 60%;
   margin: 200px auto;
 =======
   width: 50%;
+=======
+  width: 65%;
+>>>>>>> 9e648df (0709)
   margin: 100px auto 200px;
 >>>>>>> 7a5b2bc (0704)
 }
@@ -555,8 +562,12 @@ main {
   padding: 0 2rem;
 =======
   padding: 0; /* ←左右paddingを0に */
+<<<<<<< HEAD
 >>>>>>> 7a5b2bc (0704)
   font-size: 20px;
+=======
+  font-size: 18px;
+>>>>>>> 9e648df (0709)
   font-weight: bold;
   color: rgba(112, 112, 112, 0.6431372549);
 }
@@ -622,20 +633,16 @@ main {
 .contents_area .menuTab .menuo .menuT .menuText .menup {
   display: none;
   justify-content: space-between;
+  text-align: center;
 }
 .contents_area .menuTab .menuo .menuT .menuText .menup a {
-  width: calc(25% - 10px);
-  text-align: center;
+  width: auto;
   display: block;
-  margin: 1.3em;
-  font-size: 16px;
-  border-right: 1px solid #000;
+  margin: 1.2em auto;
+  font-size: 15px;
 }
 .contents_area .menuTab .menuo .menuT .menuText .menup a:last-child {
   border-right: none;
-}
-.contents_area .menuTab .menuo .menuT .menuText .menup a img {
-  display: block;
 }
 .contents_area .menuTab .menuo .menuT .menuText .active {
   transition: transform 1s;
@@ -658,21 +665,20 @@ main {
   display: flex;
   gap: 50px;
 }
-
-.sample_box {
+.sample_area .sample_box {
   width: 50%;
   height: 100%;
   padding: 5%;
   background: #fff;
   border-radius: 5px;
 }
-.sample_box .artboard {
+.sample_area .sample_box .artboard {
   width: 80%;
   height: 80%;
   margin: auto;
   text-align: center;
 }
-.sample_box .artboard .square {
+.sample_area .sample_box .artboard .square {
   width: 50px;
   height: 50px;
   background-color: #e65555;
@@ -686,6 +692,7 @@ main {
 
 .sec {
   margin-bottom: 50px;
+  padding-top: 50px;
 }
 
 #codesumple {

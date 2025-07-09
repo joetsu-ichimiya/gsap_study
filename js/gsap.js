@@ -95,3 +95,10 @@ gsap.to(".s13", {
     duration: 1.3,
     repeat: -1, //繰り返し
 });
+gsap.to(".s14", {
+    x: 200, //位置
+    y: 20, //位置
+    duration: 1.3,
+    repeat: -1, //繰り返し
+    yoyo: true, //往復アニメーション
+});
