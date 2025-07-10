@@ -6,17 +6,29 @@
 //     opacity: 0,//透明度
 //     ease: Power4.out,//変化の細かい設定
 // });
+<<<<<<< HEAD
 gsap.to(".s01", {
     x: 200, //位置
     duration: 1.3,
     repeat: -1, //繰り返し
+=======
+gsap.to(".a01", {
+    x: 200,//位置
+    duration: 1.3,
+    repeat: -1,//繰り返し
+>>>>>>> origin/codespace-sturdy-space-zebra-jpqrwxv76w72r7p
     repeatDelay: 0.5,
 });
 
 gsap.to(".s02", {
     backgroundColor: "#abcfe0",
+<<<<<<< HEAD
     duration: 1.3,
     repeat: -1, //繰り返し
+=======
+    duration: 1.5,
+    repeat: -1,//繰り返し
+>>>>>>> origin/codespace-sturdy-space-zebra-jpqrwxv76w72r7p
     repeatDelay: 0.5,
 <<<<<<< HEAD
 });
@@ -25,6 +37,7 @@ gsap.to(".s02", {
 gsap.to(".s03", {
     opacity: 0.3,
     duration: 1.3,
+<<<<<<< HEAD
     repeat: -1, //繰り返し
     repeatDelay: 0.5,
 });
@@ -102,3 +115,15 @@ gsap.to(".s14", {
     repeat: -1, //繰り返し
     yoyo: true, //往復アニメーション
 });
+=======
+    repeat: -1,//繰り返し
+    repeatDelay: 0.5,
+});
+gsap.to(".s032", {
+    rotate: 50,
+    duration: 1.3,
+    repeat: -1,//繰り返し
+    repeatDelay: 0.5,
+});
+
+>>>>>>> origin/codespace-sturdy-space-zebra-jpqrwxv76w72r7p

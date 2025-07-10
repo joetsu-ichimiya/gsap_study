@@ -114,11 +114,13 @@ main {
                     padding: 0.5rem 0.5rem;
                     background: #050505;
                     border-radius: 5px 0 2px 0;
-                        color: #fff;
+                    .lang {
                         i {
                             margin-right: 3px;
                         }
 
+                        color: #fff;
+                    }
                 }
 
                 .txtCopyBox {
@@ -156,7 +158,7 @@ main {
     }
     .menuTab {
         .menuo {
-            width: 65%;
+            width: 50%;
             margin: 100px auto 200px;
             .menuT {
                 ul {
@@ -171,7 +173,7 @@ main {
                     }
                     li {
                         padding: 0; /* ←左右paddingを0に */
-                        font-size: 18px;
+                        font-size: 20px;
                         font-weight: bold;
                         color: #707070a4;
 
@@ -240,15 +242,18 @@ main {
                     .menup {
                         display: none;
                         justify-content: space-between;
-                            text-align: center;
                         a {
-                            width: auto;
+                            width: calc(100% / 4 - 10px);
+                            text-align: center;
                             display: block;
-                            margin: 1.2em auto;
-                            font-size: 15px;
-                            // border-right: 1px solid #000;
+                            margin: 1.3em;
+                            font-size: 16px;
+                            border-right: 1px solid #000;
                             &:last-child {
                                 border-right: none;
+                            }
+                            img {
+                                display: block;
                             }
                         }
                     }
@@ -277,7 +282,7 @@ main {
     padding-bottom: 55px;
     display: flex;
     gap: 50px;
-
+}
 .sample_box {
     width: calc(100% / 2);
     height: 100%;
@@ -296,14 +301,12 @@ main {
         }
     }
 }
-}
 .s02 {
     text-align: center;
 }
 
 .sec {
     margin-bottom: 50px;
-    padding-top: 50px;
 }
 #codesumple {
     border-radius: 5px;
