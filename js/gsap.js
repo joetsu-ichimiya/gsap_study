@@ -115,15 +115,15 @@ gsap.to(".s14", {
     repeat: -1, //繰り返し
     yoyo: true, //往復アニメーション
 });
-=======
-    repeat: -1,//繰り返し
-    repeatDelay: 0.5,
-});
-gsap.to(".s032", {
-    rotate: 50,
-    duration: 1.3,
-    repeat: -1,//繰り返し
-    repeatDelay: 0.5,
-});
+// =======
+//     repeat: -1,//繰り返し
+//     repeatDelay: 0.5,
+// });
+// gsap.to(".s032", {
+//     rotate: 50,
+//     duration: 1.3,
+//     repeat: -1,//繰り返し
+//     repeatDelay: 0.5,
+// });
 
->>>>>>> origin/codespace-sturdy-space-zebra-jpqrwxv76w72r7p
+// >>>>>>> origin/codespace-sturdy-space-zebra-jpqrwxv76w72r7p
