@@ -48,9 +48,7 @@ gsap.to(".s04", {
     repeatDelay: 0.5,
 });
 
-<<<<<<< HEAD
->>>>>>> 7a5b2bc (0704)
-=======
+
 gsap.to(".s05", {
     border: "#0000FF",
     duration: 1.3,
