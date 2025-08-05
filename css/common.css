@@ -74,8 +74,7 @@ header {
   box-shadow: #000 1px 1px;
   z-index: 999;
   background-color: #f7f2ea;
-  -webkit-clip-path: inset(-1% -1px -1px 0);
-          clip-path: inset(-1% -1px -1px 0);
+  clip-path: inset(-1% -1px -1px 0);
   transition: 0.2s;
   /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
 }

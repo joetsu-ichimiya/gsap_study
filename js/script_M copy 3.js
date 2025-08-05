@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
+ 
 // topに戻るボタン
 $(function () {
     // スクロール位置によってボタンの表示/非表示を切り替え
@@ -39,7 +39,7 @@ const SnavMusk = document.getElementById("SnavMusk"); // ナビのマスク
 SnavMusk.style.cursor = "pointer";
 SnavMusk.addEventListener("click", () => {
     // ヘッダーが小さい時にナビを開閉
-=======
+ 
 $(function () {
     //topに戻るボタン
     function topanime() {
@@ -84,20 +84,20 @@ let scrl =
 SnavMusk.style.cursor = "pointer";
 
 SnavMusk.addEventListener("click", () => {
->>>>>>> origin/codespace-sturdy-space-zebra-jpqrwxv76w72r7p
+
     if (hdr.classList.contains("headerSmall")) {
         Snav.classList.toggle("navactive");
         hdr.classList.toggle("headerWide");
         Snav.style.cursor = "auto";
         SnavMusk.classList.toggle("navScl");
-<<<<<<< HEAD
+ 
     }
 });
 
 Snav.style.display = "none";
 window.addEventListener("scroll", () => {
     // スクロール量によってヘッダーやナビの表示切り替え
-=======
+ 
     } else {
     }
     
@@ -105,7 +105,7 @@ window.addEventListener("scroll", () => {
 ///////////////////////////////////////////////////////////
 Snav.style.display = "none";
 window.addEventListener("scroll", () => {
->>>>>>> origin/codespace-sturdy-space-zebra-jpqrwxv76w72r7p
+
     if (
         document.body.scrollTop > 200 ||
         document.documentElement.scrollTop > 200
@@ -122,7 +122,7 @@ window.addEventListener("scroll", () => {
         Snav.classList.remove("navactive");
     } else {
         Snav.style.display = "none";
-<<<<<<< HEAD
+ 
         hdr.classList.remove("headerSmall", "headerWide");
         hdr.classList.add("headerMid");
         SnavMusk.style.display = "none";
@@ -142,17 +142,17 @@ $('.nav a[href*="#"]').click(function () {
 
 // コードコピー
 const btn1 = document.querySelectorAll(".txtCopyBox");
-<<<<<<< HEAD
+ 
 const txt = document.querySelectorAll("#code01");
 const copy_TEXT = txt.textContent;
 let codeBox = document.getElementsByClassName("codeBox");
 const CopyNoneAtv = document.getElementById("txtCopyNoneActive");
 const CopyAtv = document.getElementById("txtCopyActive");
 const copy = document.getElementById("a");
-<<<<<<< HEAD
-=======
+ 
+ 
 const copyTxt = document.getElementById("Copy");
->>>>>>> 7a5b2bc (0704)
+
 const copid = gsap.to("btn1", {
     duration: 1, // 秒指定
     x: 70,
@@ -160,24 +160,24 @@ const copid = gsap.to("btn1", {
 });
 
 for (i = 0; i < btn1.length; i++) {
-=======
+ 
 for (let i = 0; i < btn1.length; i++) {
->>>>>>> 70b6640 (Refactor layout styles and improve responsiveness; update HTML structure for consistency; enhance JavaScript functionality for navigation and tab interactions.)
+
     codeCopy(btn1[i], i);
 }
 function codeCopy(btn1DOM, btn1Id) {
     // コピーボタンをクリックしたときの処理
     btn1DOM.addEventListener("click", () => {
-<<<<<<< HEAD
-<<<<<<< HEAD
+ 
+ 
         gsap.to(btn1DOM, {
-=======
+ 
         
-=======
+ 
         // コピーアニメーション
->>>>>>> 70b6640 (Refactor layout styles and improve responsiveness; update HTML structure for consistency; enhance JavaScript functionality for navigation and tab interactions.)
+
         gsap.to(btn1DOM.querySelector("p"), {
->>>>>>> 7a5b2bc (0704)
+
             y: -2,
             duration: 0.1,
             repeat: 1,
@@ -193,7 +193,7 @@ function codeCopy(btn1DOM, btn1Id) {
         setTimeout(() => (btn1DOM.querySelector("p").textContent = "copy"), 2000);
 
         // 対象コードをクリップボードにコピー
-=======
+ 
         hdr.classList.remove("headerSmall");
         hdr.classList.remove("headerWide");
         hdr.classList.add("headerMid");
@@ -260,13 +260,10 @@ function codeCopy(btn1DOM, btn1Id) {
             2000
         );
 
->>>>>>> origin/codespace-sturdy-space-zebra-jpqrwxv76w72r7p
-        let copi = btn1DOM.parentNode.nextSibling.nextSibling;
-        navigator.clipboard.writeText(copi.textContent);
     });
 }
 
-<<<<<<< HEAD
+ 
 ///////////////////////////////////////////////////////////
 
 // 最終更新日表示
@@ -322,14 +319,14 @@ tabElm.forEach(tab => {
 
             dotTab.style.display = "block";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+ 
+ 
 let dotTab = document.querySelector(".dotTab");
-=======
+ 
 let menuW = document.querySelector("#sec04");
 let dotTab = document.querySelector(".dotTab");
 let tabUl = document.querySelector("#menuU"); 
->>>>>>> 7a5b2bc (0704)
+
 dotTab.style.display = "none";
 
 if (tabElm.length > 0) {
@@ -341,7 +338,7 @@ if (tabElm.length > 0) {
             let tabBtnF = tabBtnElm[f];
 
             tabBtnF.addEventListener("click", () => {
-<<<<<<< HEAD
+ 
                 for (let f = 0; f < tabBtnElm.length; f++) {
                     console.log("kokomadeugoku");
 
@@ -376,7 +373,7 @@ if (tabElm.length > 0) {
                     dotTabFirst.style.opacity = "0";
                     // dotTabFirst.style.le = "0";
                 }
-=======
+ 
                 // ドット取得
                 let dotTab = tab.querySelector(".dotTab");
                 if (!dotTab) return;
@@ -404,23 +401,21 @@ let tabUlW = tabUl.getBoundingClientRect().width;
                 // 最初の点
                 let dotTabFirst = tab.querySelector(".dotTabFirst");
                 if (dotTabFirst) dotTabFirst.style.opacity = "0";
->>>>>>> 7a5b2bc (0704)
             });
         }
     }
 }
-=======
+ 
             // 最初の点（dotTabFirst）があれば非表示
             const dotTabFirst = tab.querySelector(".dotTabFirst");
             if (dotTabFirst) dotTabFirst.style.opacity = "0";
         });
     });
-<<<<<<< HEAD
+ 
 });
->>>>>>> 70b6640 (Refactor layout styles and improve responsiveness; update HTML structure for consistency; enhance JavaScript functionality for navigation and tab interactions.)
-=======
+ 
 });
-=======
+ 
 let fv = document.querySelector("#fv");
 let day = document.createTextNode(document.lastModified); //最終更新日生成＝day
 
@@ -543,5 +538,3 @@ let tabUlW = tabUl.getBoundingClientRect().width;
         }
     }
 }
->>>>>>> origin/codespace-sturdy-space-zebra-jpqrwxv76w72r7p
->>>>>>> 0065751 (0709)
