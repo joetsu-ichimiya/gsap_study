@@ -35,10 +35,10 @@
                         <a href="#sec04" class="js_anchor">イージング</a>
                     </li>
                     <li class="nav">
-                        <a href="#sec05" class="js_anchor">イージング</a>
+                        <a href="#sec05" class="js_anchor">aaa</a>
                     </li>
                     <li class="nav">
-                        <a href="#sec06" class="js_anchor">イージング</a>
+                        <a href="#sec06" class="js_anchor">bbb</a>
                     </li>
                 </ul>
             </div>
@@ -103,23 +103,23 @@
                                     <a href="#atcl05">線</a>
                                 </div>
                                 <div class="menup menu" data-tab-text="">
-                                    <a href="#atcl06" class="stagger">繰り返し</a>
-                                    <a href="#atcl07" class="stagger">時間</a>
-                                    <a href="#atcl08" class="stagger">加減速</a>
-                                    <a href="#atcl09" class="stagger">一時停止</a>
-                                    <a href="#atcl10" class="stagger">transform</a>
+                                    <a href="#atcl06">繰り返し</a>
+                                    <a href="#atcl07">時間</a>
+                                    <a href="#atcl08">加減速</a>
+                                    <a href="#atcl09">一時停止</a>
+                                    <a href="#atcl10">transform</a>
                                 </div>
                                 <div class="menup menu" data-tab-text="">
-                                    <a href="#atcl11" class="stagger">ccc</a>
-                                    <a href="#atcl12" class="stagger">ccc</a>
-                                    <a href="#atcl13" class="stagger">ccc</a>
-                                    <a href="#atcl14" class="stagger">ccc</a>
+                                    <a href="#atcl11">ccc</a>
+                                    <a href="#atcl12">ccc</a>
+                                    <a href="#atcl13">ccc</a>
+                                    <a href="#atcl14">ccc</a>
                                 </div>
                                 <div class="menup menu" data-tab-text="">
-                                    <a href="" class="stagger">ddd</a>
-                                    <a href="" class="stagger">ddd</a>
-                                    <a href="" class="stagger">bbb</a>
-                                    <a href="" class="stagger">bbb</a>
+                                    <a href="#atcl15">ddd</a>
+                                    <a href="">ddd</a>
+                                    <a href="">bbb</a>
+                                    <a href="">bbb</a>
                                 </div>
                             </div>
                         </div>
@@ -481,9 +481,8 @@ gsap.to(".rect", {
                                                     </div>
                                                 </div>
                                                 <!-- id="Copy -->
-                                                <div class="txtid=" id="CopyBox">
-                                                    <div class="txtid=" Copy id="Copy ov" id="Copy"
-                                                        aria-describedby="tooltip">
+                                                <div class="txtCopyBox">
+                                                    <div class="txtCopy Copy ov" aria-describedby="tooltip">
                                                         <p class="CopyAnime txtCopyNoneActive">
                                                             copy
                                                         </p>
@@ -531,7 +530,7 @@ gsap.to(".rect", {
                                                 </div>
                                                 <!-- copy -->
                                                 <div class="txtCopyBox">
-                                                    <div class="txtCopy Copy ov" Copy" aria-describedby="tooltip">
+                                                    <div class="txtCopy Copy ov Copy" aria-describedby="tooltip">
                                                         <p class="CopyAnime txtCopyNoneActive">
                                                             copy
                                                         </p>
@@ -561,13 +560,14 @@ gsap.to(".rect", {
                         <h2>リピート</h2>
                         <p>再生したの繰り返し設定</br></br>
                         <pre><code class="code codesumple">
-                    gsap.to("オブジェクトを指定", { 
-                        動きのプロパティ: 数値 ,
-                        何秒かけるか: 秒数,//ここが第2引数
-                        //追加で複数同時設定可
-                    });
+gsap.to("オブジェクトを指定", { 
+    動きのプロパティ: 数値 ,
+    何秒かけるか: 秒数,//ここが第2引数
+    //追加で複数同時設定可
+});
                                             </code></pre>
                         </p>
+
                         <!-- 10 -->
                         <div class="jsAnchor sec" id="atcl10">
                             <div class="txtBox">
@@ -645,162 +645,161 @@ gsap.to(".rect", {
                                             </div>
                                             <!-- copy -->
                                             <div class="txtCopyBox">
-                                                <div class="txtCopy Copy ov" Copy" aria-describedby="tooltip">
+                                                <div class="txtCopy Copy ov Copy" aria-describedby="tooltip">
                                                     <p class="CopyAnime txtCopyNoneActive">
                                                         copy
                                                     </p>
-                                                    <i class="fa-solid fa-copy CopyAnime></i>
+                                                    <i class="fa-solid fa-copy CopyAnime"></i>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class=" codeBox">
-                                                        <pre><code class="code">
+                                            <pre><code class="code">
 gsap.to(".rect", {
         x: 200,
         duration: 1.3,     
         repeatDelay: 2,
 });           
                             </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 12 -->
+                        <div class="jsAnchor sec" id="atcl12">
+                            <div class="txtBox">
+                                <div class="txtBox">
+                                    <h3 class="read">リピート時の反復挙動</h3>
+                                    <p>
+                                        【yoyo ： falseまたはtrue（デフォルト false）,】<br>真偽値※trueでアニメーションを一時停止
+                                    </p>
+                                </div>
+                                <div class="sampleArea">
+                                    <div class="sampleBox">
+                                        <div class="artboard">
+                                            <div class="square s12"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="codes">
+                                        <div class="codeInfo">
+                                            <!-- lang -->
+                                            <div class="langBox">
+                                                <div class="lang">
+                                                    <i class="fa-solid fa-code"></i>.js
+                                                </div>
+                                            </div>
+                                            <!-- copy -->
+                                            <div class="txtCopyBox">
+                                                <div class="txtCopy Copy ov  Copy" aria-describedby="tooltip">
+                                                    <p class="CopyAnime txtCopyNoneActive">
+                                                        copy
+                                                    </p>
+                                                    <i class="fa-solid fa-copy CopyAnime"></i>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- 12 -->
-                                    <div class="jsAnchor sec" id="atcl12">
-                                        <div class="txtBox">
-                                            <div class="txtBox">
-                                                <h3 class="read">リピート時の反復挙動</h3>
-                                                <p>
-                                                    【yoyo ： falseまたはtrue（デフォルト false）,】<br>真偽値※trueでアニメーションを一時停止
-                                                </p>
-                                            </div>
-                                            <div class="sampleArea">
-                                                <div class="sampleBox">
-                                                    <div class="artboard">
-                                                        <div class="square s12"></div>
-                                                    </div>
-                                                </div>
 
-                                                <div class="codes">
-                                                    <div class="codeInfo">
-                                                        <!-- lang -->
-                                                        <div class="langBox">
-                                                            <div class="lang">
-                                                                <i class="fa-solid fa-code"></i>.js
-                                                            </div>
-                                                        </div>
-                                                        <!-- copy -->
-                                                        <div class="txtCopyBox">
-                                                            <div class="txtCopy Copy ov  Copy"
-                                                                aria-describedby="tooltip">
-                                                                <p class="CopyAnime txtCopyNoneActive">
-                                                                    copy
-                                                                </p>
-                                                                <i class="fa-solid fa-copy CopyAnime"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="codeBox">
-                                                        <pre><code class="code">
+                                        <div class="codeBox">
+                                            <pre><code class="code">
 gsap.to(".rect", {
     x: 200 ,
     duration: 1.3,
     paused: true, // アニメーションを一時停止
 });           
                             </code></pre>
-                                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 13 -->
+                        <div class="jsAnchor sec" id="atcl13">
+                            <div class="txtBox">
+                                <div class="txtBox">
+                                    <h3 class="read">無限リピート</h3>
+                                    <p>
+                                        【repeat: -1,】<br>真偽値※trueでアニメーションを一時停止
+                                    </p>
+                                </div>
+                                <div class="sampleArea">
+                                    <div class="sampleBox">
+                                        <div class="artboard">
+                                            <div class="square s12"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="codes">
+                                        <div class="codeInfo">
+                                            <!-- lang -->
+                                            <div class="langBox">
+                                                <div class="lang">
+                                                    <i class="fa-solid fa-code"></i>.js
+                                                </div>
+                                            </div>
+                                            <!-- copy -->
+                                            <div class="txtCopyBox">
+                                                <div class="txtCopy Copy ov" Copy" aria-describedby="tooltip">
+                                                    <p class="CopyAnime txtCopyNoneActive">
+                                                        copy
+                                                    </p>
+                                                    <i class="fa-solid fa-copy CopyAnime"></i>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- 13 -->
-                                    <div class="jsAnchor sec" id="atcl13">
-                                        <div class="txtBox">
-                                            <div class="txtBox">
-                                                <h3 class="read">無限リピート</h3>
-                                                <p>
-                                                    【repeat: -1,】<br>真偽値※trueでアニメーションを一時停止
-                                                </p>
-                                            </div>
-                                            <div class="sampleArea">
-                                                <div class="sampleBox">
-                                                    <div class="artboard">
-                                                        <div class="square s12"></div>
-                                                    </div>
-                                                </div>
 
-                                                <div class="codes">
-                                                    <div class="codeInfo">
-                                                        <!-- lang -->
-                                                        <div class="langBox">
-                                                            <div class="lang">
-                                                                <i class="fa-solid fa-code"></i>.js
-                                                            </div>
-                                                        </div>
-                                                        <!-- copy -->
-                                                        <div class="txtCopyBox">
-                                                            <div class="txtCopy Copy ov" Copy"
-                                                                aria-describedby="tooltip">
-                                                                <p class="CopyAnime txtCopyNoneActive">
-                                                                    copy
-                                                                </p>
-                                                                <i class="fa-solid fa-copy CopyAnime"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="codeBox">
-                                                        <pre><code class="code">
+                                        <div class="codeBox">
+                                            <pre><code class="code">
 gsap.to(".rect", {
     x: 200 ,
     duration: 1.3,
     repeat: -1, // 無限リピート
 });           
                             </code></pre>
-                                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 14 -->
+                        <div class="jsAnchor sec" id="atcl14">
+                            <div class="txtBox">
+                                <div class="txtBox">
+                                    <h3 class="read">リピート遅延</h3>
+                                    <p>
+                                        【repeatDelay: 秒数,】<br>真偽値※trueでアニメーションを一時停止
+                                    </p>
+                                </div>
+                                <div class="sampleArea">
+                                    <div class="sampleBox">
+                                        <div class="artboard">
+                                            <div class="square s12"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="codes">
+                                        <div class="codeInfo">
+                                            <!-- lang -->
+                                            <div class="langBox">
+                                                <div class="lang">
+                                                    <i class="fa-solid fa-code"></i>.js
+                                                </div>
+                                            </div>
+                                            <!-- copy -->
+                                            <div class="txtCopyBox">
+                                                <div class="txtCopy Copy ov Copy" aria-describedby="tooltip">
+                                                    <p class="CopyAnime txtCopyNoneActive">
+                                                        copy
+                                                    </p>
+                                                    <i class="fa-solid fa-copy CopyAnime"></i>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div><!-- 12 -->
-                                    <div class="jsAnchor sec" id="atcl12">
-                                        <div class="txtBox">
-                                            <div class="txtBox">
-                                                <h3 class="read">リピート遅延</h3>
-                                                <p>
-                                                    【repeatDelay: 秒数,】<br>真偽値※trueでアニメーションを一時停止
-                                                </p>
-                                            </div>
-                                            <div class="sampleArea">
-                                                <div class="sampleBox">
-                                                    <div class="artboard">
-                                                        <div class="square s12"></div>
-                                                    </div>
-                                                </div>
 
-                                                <div class="codes">
-                                                    <div class="codeInfo">
-                                                        <!-- lang -->
-                                                        <div class="langBox">
-                                                            <div class="lang">
-                                                                <i class="fa-solid fa-code"></i>.js
-                                                            </div>
-                                                        </div>
-                                                        <!-- copy -->
-                                                        <div class="txtCopyBox">
-                                                            <div class="txtCopy Copy ov" Copy"
-                                                                aria-describedby="tooltip">
-                                                                <p class="CopyAnime" txtCopyNoneActive">
-                                                                    copy
-                                                                </p>
-                                                                <i class="fa-solid fa-copy CopyAnime"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="codeBox">
-                                                        <pre><code class="code">
+                                        <div class="codeBox">
+                                            <pre><code class="code">
 gsap.to(".rect", {
     x: 200 ,
     duration: 1.3,
@@ -808,225 +807,224 @@ gsap.to(".rect", {
 });
 
 </code></pre>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
 
-                            <div class="jsAnchor sec" id="sec12">
-                                <h2>transform</h2>
-                                <p>CSSのtransformを使用して、動きを指定できる。</br>ショートカットで記述可能なものもある</br>
-                                <pre><code class="code codesumple">
+                    <div id="sec04" class="jsAnchor sec">
+                        <h2>transform</h2>
+                        <p>CSSのtransformを使用して、動きを指定できる。</br>ショートカットで記述可能なものもある</br>
+                        <pre><code class="code codesumple">
                     gsap.to("オブジェクトを指定", { 
                         動きのプロパティ: 数値 ,
                         何秒かけるか: 秒数,//ここが第2引数
                         //追加で複数同時設定可
                     });
                                             </code></pre>
-                                </p>
-                                <!-- 13 -->
-                                <div class="jsAnchor sec" id="atcl13">
-                                    <div class="txtBox">
-                                        <div class="txtBox">
-                                            <h3 class="read">時間</h3>
-                                            <p>
-                                                【duration ： 秒数（デフォルト 1.0）,】
-                                            </p>
+                        </p>
+                        <!-- 15 -->
+                        <div class="jsAnchor sec" id="atcl15">
+                            <div class="txtBox">
+                                <div class="txtBox">
+                                    <h3 class="read">時間</h3>
+                                    <p>
+                                        【duration ： 秒数（デフォルト 1.0）,】
+                                    </p>
+                                </div>
+                                <div class="sampleArea">
+                                    <div class="sampleBox">
+                                        <div class="artboard">
+                                            <div class="square s13"></div>
                                         </div>
-                                        <div class="sampleArea">
-                                            <div class="sampleBox">
-                                                <div class="artboard">
-                                                    <div class="square s13"></div>
+                                    </div>
+
+                                    <div class="codes">
+                                        <div class="codeInfo">
+                                            <div class="langBox">
+                                                <div class="lang">
+                                                    <i class="fa-solid fa-code"></i>.js
                                                 </div>
                                             </div>
-
-                                            <div class="codes">
-                                                <div class="codeInfo">
-                                                    <div class="langBox">
-                                                        <div class="lang">
-                                                            <i class="fa-solid fa-code"></i>.js
-                                                        </div>
-                                                    </div>
-                                                    <div class="txtCopyBox">
-                                                        <div class="txtCopy" Copy" aria-describedby="tooltip">
-                                                            <p class="CopyAnime" txtCopyNoneActive">
-                                                                copy
-                                                            </p>
-                                                            <i class="fa-solid fa-copy CopyAnime"></i>
-                                                        </div>
-                                                    </div>
+                                            <div class="txtCopyBox">
+                                                <div class="txtCopy Copy" aria-describedby="tooltip">
+                                                    <p class="CopyAnime txtCopyNoneActive">
+                                                        copy
+                                                    </p>
+                                                    <i class="fa-solid fa-copy CopyAnime"></i>
                                                 </div>
+                                            </div>
+                                        </div>
 
-                                                <div class="codeBox">
-                                                    <pre><code class="code">
+                                        <div class="codeBox">
+                                            <pre><code class="code">
 gsap.to(".rect", { 
     x: 200 ,
     duration: 2.5,
 });
                                 
                         </code></pre>
-                                                </div>
-                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 16 -->
+                        <div class="jsAnchor sec" id="atcl16">
+                            <div class="txtBox">
+                                <div class="txtBox">
+                                    <h3 class="read">遅延秒数</h3>
+                                    <p>
+                                        【delay ： 秒数（デフォルト 0）,】</br>アニメーション開始前の待機時間
+                                    </p>
+                                </div>
+                                <div class="sampleArea">
+                                    <div class="sampleBox">
+                                        <div class="artboard">
+                                            <div class="square s14"></div>
                                         </div>
                                     </div>
 
-                                </div>
-                                <!-- 14 -->
-                                <div class="jsAnchor sec" id="atcl14">
-                                    <div class="txtBox">
-                                        <div class="txtBox">
-                                            <h3 class="read">遅延秒数</h3>
-                                            <p>
-                                                【delay ： 秒数（デフォルト 0）,】</br>アニメーション開始前の待機時間
-                                            </p>
-                                        </div>
-                                        <div class="sampleArea">
-                                            <div class="sampleBox">
-                                                <div class="artboard">
-                                                    <div class="square s14"></div>
+                                    <div class="codes">
+                                        <div class="codeInfo">
+                                            <!-- lang -->
+                                            <div class="langBox">
+                                                <div class="lang">
+                                                    <i class="fa-solid fa-code"></i>.js
                                                 </div>
                                             </div>
-
-                                            <div class="codes">
-                                                <div class="codeInfo">
-                                                    <div class="langBox">
-                                                        <i class="fa-solid fa-code"></i>.js
-                                                    </div>
-                                                    <div class="txtCopyBox">
-                                                        <div class="txtCopy Copy ov" Copy" aria-describedby="tooltip">
-                                                            <p class="CopyAnime" txtCopyNoneActive">
-                                                                copy
-                                                            </p>
-                                                            <i class="fa-solid fa-copy CopyAnime"></i>
-                                                        </div>
-                                                    </div>
+                                            <div class="txtCopyBox">
+                                                <div class="txtCopy Copy ov Copy" aria-describedby="tooltip">
+                                                    <p class="CopyAnime txtCopyNoneActive">
+                                                        copy
+                                                    </p>
+                                                    <i class="fa-solid fa-copy CopyAnime"></i>
                                                 </div>
+                                            </div>
+                                        </div>
 
-                                                <div class="codeBox">
-                                                    <pre><code class="code">
+                                        <div class="codeBox">
+                                            <pre><code class="code">
 gsap.to(".rect", {
     backgroundColor: "#abcfe0" ,
     duration: 1.3,
     delay: 1.5,
 });           
                             </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 17 -->
+                        <div class="jsAnchor sec" id="atcl17">
+                            <div class="txtBox">
+                                <div class="txtBox">
+                                    <h3 class="read">一時停止</h3>
+                                    <p>
+                                        【paused ： falseまたはtrue（デフォルト false）,】真偽値※tureでアニメーションを一時停止
+                                    </p>
+                                </div>
+                                <div class="sampleArea">
+                                    <div class="sampleBox">
+                                        <div class="artboard">
+                                            <div class="square s15"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="codes">
+                                        <div class="codeInfo">
+                                            <!-- lang -->
+                                            <div class="langBox">
+                                                <div class="lang">
+                                                    <i class="fa-solid fa-code"></i>.js
+                                                </div>
+                                            </div>
+                                            <!-- copy -->
+                                            <div class="txtCopyBox">
+                                                <div class="txtCopy Copy ov" id="Copy" aria-describedby="tooltip">
+                                                    <p class="CopyAnime txtCopyNoneActive">
+                                                        copy
+                                                    </p>
+                                                    <i class="fa-solid fa-copy CopyAnime"></i>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- 8 -->
-                                    <div class="jsAnchor sec" id="atcl15">
-                                        <div class="txtBox">
-                                            <div class="txtBox">
-                                                <h3 class="read">一時停止</h3>
-                                                <p>
-                                                    【paused ： falseまたはtrue（デフォルト false）,】真偽値※tureでアニメーションを一時停止
-                                                </p>
-                                            </div>
-                                            <div class="sampleArea">
-                                                <div class="sampleBox">
-                                                    <div class="artboard">
-                                                        <div class="square s15"></div>
-                                                    </div>
-                                                </div>
 
-                                                <div class="codes">
-                                                    <div class="codeInfo">
-                                                        <!-- lang -->
-                                                        <div class="langBox">
-                                                            <div class="lang">
-                                                                <i class="fa-solid fa-code"></i>.js
-                                                            </div>
-                                                        </div>
-                                                        <!-- copy -->
-                                                        <div class="txtCopyBox">
-                                                            <div class="txtCopy Copy ov" id="Copy"
-                                                                aria-describedby="tooltip">
-                                                                <p class="CopyAnime" txtCopyNoneActive">
-                                                                    copy
-                                                                </p>
-                                                                <i class="fa-solid fa-copy CopyAnime"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="codeBox">
-                                                        <pre><code class="code">
+                                        <div class="codeBox">
+                                            <pre><code class="code">
 gsap.to(".rect", {
     x: 200 ,
     duration: 1.3,
     paused: true, // アニメーション一時停止
 }); 
 </code></pre>
-                                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 18 -->
+                        <div class="jsAnchor sec" id="atcl18">
+                            <div class="txtBox">
+                                <div class="txtBox">
+                                    <h3 class="read">上書き</h3>
+                                    <p>
+                                        【overwrite ： 真偽値,】</br>falseで無効、trueで有効。autoも使用可能
+                                    </p>
+                                </div>
+                                <div class="sampleArea">
+                                    <div class="sampleBox">
+                                        <div class="artboard">
+                                            <div class="square s16"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="codes">
+                                        <div class="codeInfo">
+                                            <!-- lang -->
+                                            <div class="langBox">
+                                                <div class="lang">
+                                                    <i class="fa-solid fa-code"></i>.js
+                                                </div>
+                                            </div>
+                                            <!-- copy -->
+                                            <div class="txtCopyBox">
+                                                <div class="txtCopy Copy ov Copy" aria-describedby="tooltip">
+                                                    <p class="CopyAnime txtCopyNoneActive">
+                                                        copy
+                                                    </p>
+                                                    <i class="fa-solid fa-copy CopyAnime"></i>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- 4 -->
-                                    <div class="jsAnchor sec" id="atcl16">
-                                        <div class="txtBox">
-                                            <div class="txtBox">
-                                                <h3 class="read">上書き</h3>
-                                                <p>
-                                                    【overwrite ： 真偽値,】</br>falseで無効、trueで有効。autoも使用可能
-                                                </p>
-                                            </div>
-                                            <div class="sampleArea">
-                                                <div class="sampleBox">
-                                                    <div class="artboard">
-                                                        <div class="square s16"></div>
-                                                    </div>
-                                                </div>
 
-                                                <div class="codes">
-                                                    <div class="codeInfo">
-                                                        <!-- lang -->
-                                                        <div class="langBox">
-                                                            <div class="lang">
-                                                                <i class="fa-solid fa-code"></i>.js
-                                                            </div>
-                                                        </div>
-                                                        <!-- copy -->
-                                                        <div class="txtCopyBox">
-                                                            <div class="txtCopy Copy ov" Copy"
-                                                                aria-describedby="tooltip">
-                                                                <p class="CopyAnime txtCopyNoneActive">
-                                                                    copy
-                                                                </p>
-                                                                <i class="fa-solid fa-copy CopyAnime"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="codeBox">
-                                                        <pre><code class="code">
+                                        <div class="codeBox">
+                                            <pre><code class="code">
 gsap.to(".rect", {
     rotate: 50,
     duration: 1.3,
     overwrite: true,
 });           
                             </code></pre>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="sec">
-                                <div class="sec">
-                                    <h2 class="">タイムライン</h2>
-                                    <div class="txt_box">
-                                        <p class="txt_box">
-                                            タイムラインを設定して連続的なアニメーションを作成<br>
-                                            関数を定義
-                                        </p>
-                                        <pre><code>
+                        </div>
+                    </div>
+
+
+                    <div id="sec05" class="jsAnchor sec">
+                        <h2>タイムライン</h2>
+                        <p class="txt_box">
+                            タイムラインを設定して連続的なアニメーションを作成<br>
+                            関数を定義
+                        </p>
+                        <pre><code>
  //初期化
 const 関数名 = gsap.timeline({リピートの設定});
 //連続させる順番に追加していく
@@ -1035,80 +1033,83 @@ const 関数名 = gsap.timeline({リピートの設定});
             ・
             ・
             ・</code></pre>
-                                        <p>
-                                            .add(gsap.to())は省略可能
-                                        </p>
-                                        <code><pre>
+                        <p>
+                            .add(gsap.to())は省略可能
+                        </p>
+                        <code><pre>
 const 関数名 = gsap.timeline({リピートの設定});
 関数名.to("アニメーションさせる要素"),{動きの内容});
             ・
             ・
             ・</code></pre>
-                                        <p>もしくは、</p>
-                                        <pre><code>gsap.timeline({リピートの設定});
+                        <p>もしくは、</p>
+                        <pre><code>gsap.timeline({リピートの設定});
     .to("アニメーションさせる要素"),{動きの内容});
                                 ・
                                 ・
                                 ・</code></pre>
-                                        <p>
-                                            モーションを重ねて、より滑らかな演出を行う
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p>
-                                タイムラインのメソッド<br>
-                                タイムラインの作成で主に利用にするのは以下のメソッド。<br>
-                            </p>
-                            <div class="table">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>関数名</th>
-                                            <th>説明</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>add()</td>
-                                            <td>トゥイーン、タイムライン、コールバック、ラベルをタイムラインに追加します。</td>
-                                        </tr>
-                                        <tr>
-                                            <td>to()</td>
-                                            <td>gsap.to()トゥイーンをタイムラインの最後に追加します。</td>
-                                        </tr>
-                                        <tr>
-                                            <td>from()</td>
-                                            <td>gsap.from() トゥイーンをタイムラインの最後に追加します。</td>
-                                        </tr>
-                                        <tr>
-                                            <td>fromTo()</td>
-                                            <td>gsap.fromTo() トゥイーンをタイムラインの最後に追加します。</td>
-                                        </tr>
-                                        <tr>
-                                            <td>set()</td>
-                                            <td>タイミングで値をセットします。</td>
-                                        </tr>
-                                        <tr>
-                                            <td>call()</td>
-                                            <td>タイミングで関数を呼び出します。</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <small class="note">引用：<a href="https://ics.media/entry/220825/">GSAP入門（後編）-
-                                    タイムライン制御やスクロール演出などの魅力的なJSライブラリ</a></small>
+                        <p>
+                            モーションを重ねて、より滑らかな演出を行う
+                        </p>
 
 
 
+                        <p>
+                            タイムラインのメソッド<br>
+                            タイムラインの作成で主に利用にするのは以下のメソッド。<br>
+                        </p>
+                        <div class="table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>関数名</th>
+                                        <th>説明</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>add()</td>
+                                        <td>トゥイーン、タイムライン、コールバック、ラベルをタイムラインに追加します。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>to()</td>
+                                        <td>gsap.to()トゥイーンをタイムラインの最後に追加します。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>from()</td>
+                                        <td>gsap.from() トゥイーンをタイムラインの最後に追加します。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>fromTo()</td>
+                                        <td>gsap.fromTo() トゥイーンをタイムラインの最後に追加します。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>set()</td>
+                                        <td>タイミングで値をセットします。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>call()</td>
+                                        <td>タイミングで関数を呼び出します。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <small class="note">引用：<a href="https://ics.media/entry/220825/">GSAP入門（後編）-
+                                タイムライン制御やスクロール演出などの魅力的なJSライブラリ</a></small>
+                        <div class="sec"> </div>
+                        <div class="txt_box"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
 
-                            <div class="scroll_btn">
-                                <p><i class="fa-solid fa-arrow-up"></i></p>
-                            </div>
-        </main>
+    <div class="scroll_btn">
+        <p><i class="fa-solid fa-arrow-up"></i></p>
+    </div>
 
-        <footer class="footer"></footer>
+    </main>
+
+    <footer class="footer"></footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -1117,13 +1118,13 @@ const 関数名 = gsap.timeline({リピートの設定});
     <script>
         hljs.initHighlightingOnLoad();
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
         integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
     <!-- <script src="js/ztext.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
-    <script src="js/script_M copy 3.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> -->
+    <script src="js/script.js"></script>
     <script src="js/gsap.js"></script>
 </body>
 

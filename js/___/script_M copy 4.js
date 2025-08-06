@@ -51,7 +51,6 @@ SnavMusk.addEventListener("click", () => {
         SnavMusk.classList.toggle("navScl");
     } else {
     }
-    
 });
 ///////////////////////////////////////////////////////////
 Snav.style.display = "none";
@@ -99,7 +98,7 @@ let codeBox = document.getElementsByClassName("codeBox");
 const CopyNoneAtv = document.getElementById("txtCopyNoneActive");
 const CopyAtv = document.getElementById("txtCopyActive");
 const copy = document.getElementById("a");
-const copyTxt = document.getElementById("Copy");
+const copyTxt = document.getElementsByClassName("Copy");
 const copid = gsap.to("btn1", {
     duration: 1, // 秒指定
     x: 70,
@@ -111,7 +110,6 @@ for (i = 0; i < btn1.length; i++) {
 }
 function codeCopy(btn1DOM, btn1Id) {
     btn1DOM.addEventListener("click", () => {
-        
         gsap.to(btn1DOM.querySelector("p"), {
             y: -2,
             duration: 0.1, // 秒指定
@@ -156,7 +154,6 @@ date.style.color = "#ad0b0b"; //#dateの文字色
 date.style.fontSize = "1.5rem"; //#dateの文字サイズ
 let dates = document.getElementById("date"); //
 date.style.color = "#000";
-
 
 // let pdfBtns = document.querySelectorAll(".pdfBtn");
 // //
@@ -220,9 +217,9 @@ if (tabElm.length > 0) {
 
 let active = document.querySelectorAll(".active");
 
-let menuW = document.querySelector("#sec04");
-let dotTab = document.querySelector(".dotTab");
-let tabUl = document.querySelector("#menuU"); 
+let menuW = document.querySelector("#sec0");
+let dotTab = document.querySelector(".dot_tab");
+let tabUl = document.querySelector("#menu_ul");
 dotTab.style.display = "none";
 
 if (tabElm.length > 0) {
@@ -235,10 +232,10 @@ if (tabElm.length > 0) {
 
             tabBtnF.addEventListener("click", () => {
                 // ドット取得
-                let dotTab = tab.querySelector(".dotTab");
+                let dotTab = tab.querySelector(".dot_tab");
                 if (!dotTab) return;
 
-let tabUlW = tabUl.getBoundingClientRect().width; 
+                let tabUlW = tabUl.getBoundingClientRect().width;
                 // タブボタン自身の座標
                 let btnRect = tabBtnF.getBoundingClientRect();
                 // メニュー全体の左端
@@ -246,7 +243,11 @@ let tabUlW = tabUl.getBoundingClientRect().width;
                 // ドットの幅
                 let dotTabRect = dotTab.getBoundingClientRect();
                 // タブ中央 - ドット幅/2
-                let tabpoint = btnRect.left - menuLeft + btnRect.width / 2 - dotTabRect.width / 2;
+                let tabpoint =
+                    btnRect.left -
+                    menuLeft +
+                    btnRect.width / 2 -
+                    dotTabRect.width / 2;
                 let tabpoint2 = tabpoint - tabUlW / 2 + dotTabRect.width / 2; // ドットの位置を微調整
 
                 gsap.to(dotTab, {
@@ -259,7 +260,7 @@ let tabUlW = tabUl.getBoundingClientRect().width;
                 dotTab.style.display = "block";
 
                 // 最初の点
-                let dotTabFirst = tab.querySelector(".dotTabFirst");
+                let dotTabFirst = tab.querySelector(".dot_tab_first");
                 if (dotTabFirst) dotTabFirst.style.opacity = "0";
             });
         }

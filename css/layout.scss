@@ -197,13 +197,13 @@ main {
                             }
                         }
                     }
-                    .dotTabFirst {
+                    .dot_tab_first {
                         margin-top: 6px;
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
                         pointer-events: none;
-                        .animeActive {
+                        .anime_active {
                             width: 0.35em;
                             height: 0.22em;
                             border-radius: 380px 380px 0 0;
@@ -211,7 +211,7 @@ main {
                             transition: 0.2s;
                         }
                     }
-                    .dotTab {
+                    .dot_tab {
                         margin-top: 6px;
                         position: absolute;
                         left: -0.3rem;
