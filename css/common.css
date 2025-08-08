@@ -87,7 +87,7 @@ header .active span:nth-of-type(3) {
 header .displayNone {
   display: none;
 }
-header #SnavMusk {
+header .snavi_mask {
   position: fixed; /*ボタン内側の基点となるためrelativeを指定*/
   top: 20px;
   right: 20px;

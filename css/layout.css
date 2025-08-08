@@ -501,50 +501,34 @@ main {
   display: block;
   color: #000;
 }
-@keyframes tabAct {
-  0% {
-    transform: translateX();
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.contents_area .menuTab .menuo .menuT ul .dot_tab_first {
+.contents_area .menuTab .menuo .menuT ul #dot_tab_first {
   margin-top: 6px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
 }
-.contents_area .menuTab .menuo .menuT ul .dot_tab_first .anime_active {
+.contents_area .menuTab .menuo .menuT ul #dot_tab_first .anime_active {
   width: 0.35em;
   height: 0.22em;
   border-radius: 380px 380px 0 0;
   background: #000;
   transition: 0.2s;
 }
-.contents_area .menuTab .menuo .menuT ul .dot_tab {
+.contents_area .menuTab .menuo .menuT ul #dot_tab {
   margin-top: 6px;
   position: absolute;
   left: -0.3rem;
   display: none;
   pointer-events: none;
 }
-.contents_area .menuTab .menuo .menuT ul .dot_tab .animeActive {
+.contents_area .menuTab .menuo .menuT ul #dot_tab .anime_active {
   width: 0.33em;
   height: 0.22em;
   margin: 0 auto;
   border-radius: 380px 380px 0 0;
   background: #000;
   transition: 0.1s;
-}
-@keyframes tabAct {
-  0% {
-    transform: translateX();
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .contents_area .menuTab .menuo .menuT .menuText .menup {
   display: none;

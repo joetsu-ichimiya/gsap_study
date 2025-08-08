@@ -188,16 +188,16 @@ main {
                         position: relative;
                         display: block;
                         color: #000;
-                        @keyframes tabAct {
-                            0% {
-                                transform: translateX();
-                            }
-                            100% {
-                                opacity: 1;
-                            }
-                        }
+                        // @keyframes tabAct {
+                        //     0% {
+                        //         transform: translateX();
+                        //     }
+                        //     100% {
+                        //         opacity: 1;
+                        //     }
+                        // }
                     }
-                    .dot_tab_first {
+                    #dot_tab_first {
                         margin-top: 6px;
                         position: absolute;
                         left: 50%;
@@ -211,13 +211,13 @@ main {
                             transition: 0.2s;
                         }
                     }
-                    .dot_tab {
+                    #dot_tab {
                         margin-top: 6px;
                         position: absolute;
                         left: -0.3rem;
                         display: none;
                         pointer-events: none;
-                        .animeActive {
+                        .anime_active {
                             //=dot
                             width: 0.33em;
                             height: 0.22em;
@@ -229,14 +229,14 @@ main {
                     }
                 }
 
-                @keyframes tabAct {
-                    0% {
-                        transform: translateX();
-                    }
-                    100% {
-                        opacity: 1;
-                    }
-                }
+                // @keyframes tabAct {
+                //     0% {
+                //         transform: translateX();
+                //     }
+                //     100% {
+                //         opacity: 1;
+                //     }
+                // }
 
                 .menuText {
                     .menup {
